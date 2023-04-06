@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+     <meta content="text/html">
+       <title>Вариант6  Дильмухамедова Залина(задание 1)</title>
+       <link rel="stylesheet" href="/style.CSS">
+    </head>
+    <body>
+     <script>
+       let treug = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 ];
+       treug.forEach((item, index, treug) =>{
+        treug.splice(index,1,(item*(item + 1)/2));
+       });
+       document.write("1)",treug, " ") //1 задание
+
+       document.writeln("<br></br>");
+
+       let kvd=[1,2,3,4,5,6,7,8,9,10];
+       kvd.forEach((item, index, kvd) =>{
+        kvd.splice(index,1,(item*item));
+       });
+       document.write("2)",kvd, " ") //2 задание
+
+       document.writeln("<br></br>");
+       let rez = treug.concat(kvd);
+       document.write("3)",rez);     //3 задание
+
+       document.writeln("<br></br>");
+
+       let rezsort = rez.sort();
+       document.write("4)",rezsort); //4 задание
+     </script>
+    </body>
+ </html>
