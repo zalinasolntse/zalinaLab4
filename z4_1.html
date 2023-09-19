@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Дильмухамедова Залина</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        var treug = [];
+        var kvd = [];
+        var rez = [];
+
+        // треугольные числа
+        for (var n = 1; n <= 10; n++) {
+            treug.push(n * (n + 1) / 2);
+        }
+
+        // квадратные числа
+        for (var i = 1; i <= 10; i++) {
+            kvd.push(i * i);
+        }
+
+        // соединене двух массивов
+        rez = treug.concat(kvd);
+
+        // вывод
+        document.getElementById("output").innerHTML = "«треугольные» числа: " + treug.join("  ") + "<br>квадрат натуральных чисел: " + kvd.join("  ") + "<br>Объединение 2х массивов(rez): " + rez.join("  ");
+
+        // перевертыш 
+        rez.sort(function(a, b) {
+            return b - a;
+        });
+
+        // вывод перевертыша
+        document.getElementById("output").innerHTML += "<br>массив rez в обратном порядке,: " + rez.join("  ");
+    </script>
+</body>
+</html>

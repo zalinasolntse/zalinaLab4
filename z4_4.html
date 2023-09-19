@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+     <meta content="text/html">
+       <title>Вариант6  Дильмухамедова Залина(задание 4)</title>
+       <link rel="stylesheet" href="/style.CSS">
+    </head>
+    <body>
+     <script>
+     let fruits=['apple','pineapple','mango','melon','grape'];
+     let citrus=['orange','lemon','lime'];
+
+     document.write("a)",fruits);
+     document.write("<br></br>");
+
+     document.write("б)",citrus);
+     document.write("<br></br>");
+
+     let fruitsall=fruits.concat(citrus);
+     document.write("в)",fruitsall);
+     document.write("<br></br>");
+
+     fruits.splice(3,5,'pear','cherry','plum','raspberry','strawberry');
+     document.write("г)",fruits);
+     document.write("<br></br>");
+     
+     fruits=['apple','pineapple','mango','melon','grape'];
+     fruits.splice(2,3);
+     document.write("д)",fruits);
+     document.write("<br></br>");
+     
+     fruits=['apple','pineapple','mango','melon','grape'];
+     fruits = fruits.sort();
+     document.write("е)",fruits);
+     document.write("<br></br>");
+    
+     fruits=['apple','pineapple','mango','melon','grape'];
+     fruits = fruits.sort();
+     fruits = fruits.reverse();
+     document.write("ж)",fruits);
+     document.write("<br></br>");
+    
+     fruits=['apple','pineapple','mango','melon','grape'];
+     fruits.sort(function(a, b){
+     return b.length - a.length;
+     });
+     document.write("з)",fruits);
+     </script>
+    </body>
+ </html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Дильмухамедова Залина</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        var arr = [];
+
+        // рандом
+        for (var i = 0; i < 15; i++) {
+            arr.push(Math.floor(Math.random() * 100));
+        }
+
+        // вывод рандома
+        document.getElementById("output").innerHTML = "Массив рандом: " + arr.join("  ");
+
+        // мин элемент
+        var min = Math.min.apply(null, arr);
+
+        // меняем места
+        arr[0] = min;
+
+        // замена на 9999
+        var minIndex = arr.indexOf(min);
+        arr[minIndex] = 9999;
+
+        // вывод
+        document.getElementById("output").innerHTML += "<br>Массив с измеениями: " + arr.join("  ");
+    </script>
+</body>
+</html>

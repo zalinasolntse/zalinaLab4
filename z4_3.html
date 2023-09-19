@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Дильмухамедова Залина</title>
+    <style>
+        .info {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <div class="info">
+    </div>
+
+    <script>
+        var array = [];
+        var length = 15;
+        var F = prompt("Введите F:");
+
+        for (var i = 0; i < length; i++) {
+            array.push(Math.floor(Math.random()*100));
+        }
+
+        document.write("<h2>Массив:</h2>");
+        document.write("<p>" + array.join(", ") + "</p>");
+
+        var nonNegativeCount = 0;
+        var sum = 0;
+
+        for (var i = 0; i < length; i++) {
+            if (array[i] >= 0) {
+                nonNegativeCount++;
+            }
+            if (i % 3 === 0 && array[i] !== parseFloat(F)) {
+                sum += array[i];
+            }
+        }
+
+        document.write("<h2>Результат:</h2>");
+        document.write("<p>Количество неотрицательных чисел: " + nonNegativeCount + "</p>");
+        document.write("<p>Сумма чисел в позициях, кратных 3 и не равных F: " + sum + "</p>");
+    </script>
+
+    <hr>
+</body>
+</html>
